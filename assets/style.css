@@ -1,0 +1,33 @@
+:root { --fg:#1c1c1e; --muted:#6b7280; --bg:#f7f6f3; --card:#fff; --line:#e3e0d8; --accent:#8a5a2b; }
+@media (prefers-color-scheme: dark) {
+  :root { --fg:#e6e5e3; --muted:#9d9a94; --bg:#131315; --card:#1c1c1f; --line:#312f2b; --accent:#d8a86a; }
+}
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); line-height:1.95;
+  font-family:"Songti SC","Source Han Serif SC","Noto Serif CJK SC",Georgia,"PingFang SC",
+  "Microsoft YaHei",serif; font-size:18px; }
+.wrap { max-width:36rem; margin:0 auto; padding:2rem 1.2rem 5rem; }
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+h1.book { font-size:2rem; letter-spacing:.06em; margin:.4rem 0 .3rem; }
+.tagline { color:var(--muted); font-size:.95rem; }
+h1.chapter { font-size:1.4rem; letter-spacing:.04em; margin:1.2rem 0 .3rem; }
+.meta { color:var(--muted); font-size:.88rem; margin-bottom:1.6rem; }
+p { margin:0 0 1rem; text-indent:2em; text-align:justify; }
+blockquote { margin:1.2rem 0; padding:.6rem 1rem; background:var(--card);
+  border-left:3px solid var(--accent); color:var(--fg); font-size:.95rem; }
+blockquote p { text-indent:0; margin:.3rem 0; }
+hr { border:0; text-align:center; margin:1.8rem 0; color:var(--muted); }
+hr::before { content:"✳"; letter-spacing:.5em; }
+nav.chap { display:flex; justify-content:space-between; gap:1rem; margin:2.4rem 0 0;
+  padding-top:1rem; border-top:1px solid var(--line); font-size:.92rem; }
+.toc { list-style:none; padding:0; margin:1.2rem 0 0; }
+.toc li { padding:.7rem .9rem; margin:.5rem 0; background:var(--card); border:1px solid var(--line);
+  border-radius:.5rem; }
+.toc .num { color:var(--muted); font-size:.85rem; margin-right:.5rem; }
+.vols { color:var(--muted); font-size:.9rem; }
+.vols div { margin:.2rem 0; }
+.note { background:var(--card); border:1px solid var(--line); border-radius:.5rem;
+  padding:.8rem 1rem; font-size:.9rem; color:var(--muted); margin-top:1.6rem; }
+footer { color:var(--muted); font-size:.82rem; margin-top:3rem; padding-top:1rem;
+  border-top:1px solid var(--line); }
